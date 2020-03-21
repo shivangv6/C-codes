@@ -1,0 +1,15 @@
+#include <iostream>
+#include <vector>
+
+int main()
+{
+    std::vector<std::string> vec = {"Hey","what","are","you","doing","?"};
+    std::string joining_element = "*_*";
+    std::string st = "";
+    
+    for(int i=0;i<vec.size()-1;i++){
+       st = st + vec[i] + joining_element;
+    }
+    st = st + vec[vec.size()-1];
+    std::cout << st;
+}
