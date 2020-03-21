@@ -1,0 +1,27 @@
+#include <iostream>
+#include <vector>
+
+int main()
+{  std::string req_text;
+   std::vector<std::string> empty_vect;
+   std::string empty = "";
+   std::cout << "type your string";
+   getline(std::cin,req_text);
+   
+   for(int i=0;i<req_text.size();i++){
+       if(req_text[i] !=  ' '){
+          empty = empty+req_text[i];
+       }
+       else{
+           empty_vect.push_back(empty);
+           empty = "";
+       }
+   }
+   empty_vect.push_back(empty);
+   
+   for(int j=0;j<empty_vect.size();j++){
+       std::cout << empty_vect[j] << ' ';
+   }
+   
+   
+}
