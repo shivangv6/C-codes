@@ -14,5 +14,11 @@ double average(double num1,double num2){
 }
 
 int main(){
-  cout << average(3,5);
+  double num1;
+  double num2;
+  cout << "Type num1\n";
+  cin >> num1;
+  cout << "Type num2\n";
+  cin >> num2;
+  cout << average(num1,num2);
 }
