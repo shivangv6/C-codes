@@ -1,0 +1,22 @@
+/*Write a function average() that takes:
+
+    A double parameter named num1.
+    A double parameter named num2.
+
+The function should return a double that is the average of the arguments passed in.*/
+
+#include <iostream>
+
+using namespace std;
+
+double average(double num1,double num2){
+  cout<<"enter num1\n";
+  cin>>num1;
+  cout<<"enter num2\n";
+  cin>>num2;
+  return (num1+num2)/2;
+}
+
+int main(){
+  cout << average(3,5);
+}
