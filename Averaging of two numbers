@@ -10,10 +10,6 @@ The function should return a double that is the average of the arguments passed 
 using namespace std;
 
 double average(double num1,double num2){
-  cout<<"enter num1\n";
-  cin>>num1;
-  cout<<"enter num2\n";
-  cin>>num2;
   return (num1+num2)/2;
 }
 
