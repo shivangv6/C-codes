@@ -1,0 +1,27 @@
+"""Firstly calculate greatest common divisor using euclidean method than use property
+   LCM(a,b) * HCF(a,b) = Product of two numbers (a*b), to calculate LCM.
+"""
+import sys
+
+#GCD
+def gcd(a,b):
+  if b==0:
+    return a
+  else:
+    while(b!=0):
+      temp=b
+      b=a%b
+      a=temp
+    return a
+    
+#LCM
+def LCM(a,b):
+    k=gcd(a,b)
+    lcm=(a*b)//k
+    return lcm
+
+inp = sys.stdin.readline()
+inp_list = inp.split()
+a = int(inp_list[0])
+b = int(inp_list[1])
+print(LCM(a,b))
